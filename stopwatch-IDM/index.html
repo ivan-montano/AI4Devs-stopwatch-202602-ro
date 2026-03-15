@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Stopwatch</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ddd;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.timer{
+    background:#d3d7e3;
+    border:6px solid #333;
+    border-radius:30px;
+    padding:40px 80px;
+    font-size:90px;
+    font-weight:bold;
+    position:relative;
+}
+
+.milliseconds{
+    position:absolute;
+    bottom:10px;
+    right:40px;
+    font-size:30px;
+}
+
+.controls{
+    margin-top:40px;
+    display:flex;
+    gap:80px;
+}
+
+button{
+    font-size:50px;
+    padding:30px 120px;
+    border-radius:25px;
+    border:6px solid #333;
+    cursor:pointer;
+}
+
+.start{
+    background:#00ff00;
+}
+
+.pause{
+    background:#00ff00;
+}
+
+.continue{
+    background:#007bff;
+    color:white;
+}
+
+.clear{
+    background:red;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="timer">
+    <span id="display">00:00:00</span>
+    <div id="ms" class="milliseconds">000</div>
+</div>
+
+<div class="controls">
+    <button id="startBtn" class="start">Start</button>
+    <button id="clearBtn" class="clear">Clear</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
